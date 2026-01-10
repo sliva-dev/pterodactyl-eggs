@@ -147,5 +147,3 @@ bash bin/index.sh
 <div align="center">
 <sub>Built with ❤️ by FaithNode Team</sub>
 </div>
-
-```
