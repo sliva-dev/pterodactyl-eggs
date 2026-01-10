@@ -1,0 +1,39 @@
+name: Python
+author: roman21113007@gmail.com
+description: A generic Python environment.
+
+images:
+  - name: Python 3.13
+    image: ghcr.io/faithnode/pterodactyl-images/python:3.13
+  - name: Python 3.12
+    image: ghcr.io/faithnode/pterodactyl-images/python:3.12
+  - name: Python 3.11
+    image: ghcr.io/faithnode/pterodactyl-images/python:3.11
+  - name: Python 3.10
+    image: ghcr.io/faithnode/pterodactyl-images/python:3.10
+  - name: Python 3.9
+    image: ghcr.io/faithnode/pterodactyl-images/python:3.9
+  - name: Python 3.8
+    image: ghcr.io/faithnode/pterodactyl-images/python:3.8
+  - name: Python 3.7
+    image: ghcr.io/faithnode/pterodactyl-images/python:3.7
+  - name: Python 3.6
+    image: ghcr.io/faithnode/pterodactyl-images/python:3.6
+  - name: Python 2.7
+    image: ghcr.io/faithnode/pterodactyl-images/python:2.7
+
+install:
+  script:
+    - !!file ../../../scripts/install/debian.sh
+    - !!file install.sh
+  container: "python:3.8-slim"
+  entrypoint: "bash"
+
+config:
+  stop: "^C"
+  startup:
+    done: ""
+  files: {}
+  logs: {}
+
+startup: bash ./start.sh
