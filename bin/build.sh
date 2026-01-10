@@ -32,12 +32,10 @@ do
     )
   ");
 
-  # Вычисляем URL обновления, если задана переменная URL
   if [ -n "$URL" ]; then
     UPDATE_URL="${URL%/}/$URL_PATH/$OUT_NAME";
   fi
 
-  # Преобразуем конфиг в формат Pterodactyl и сохраняем файл
   echo "$CONFIG" | jq \
   "$(
     printf '
