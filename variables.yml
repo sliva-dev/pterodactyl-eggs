@@ -3,7 +3,7 @@ images:
   java:
     name: Java {tag}
     image: ghcr.io/faithnode/pterodactyl-images/java:{tag}
-    tags: [ 8, 11, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26 ]
+    tags: [ 8, 11, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25 ]
   
   java_openj9:
     name: Java OpenJ9 {tag}
@@ -14,17 +14,6 @@ images:
     name: JavaFX {tag}
     image: ghcr.io/faithnode/pterodactyl-images/javafx:{tag}
     tags: [ 11, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26 ]
-    
-  java_temurin:
-    name: Java Eclipse Temurin {tag}
-    image: ghcr.io/faithnode/pterodactyl-images/java-eclipse-temurin:{tag}
-    tags: [ 8, 11, 16, 17, 18, 19, 20, 21, 22, 25 ]
-
-  # Образы Pterodactyl Yolks (для GoMint и специфичных серверов)
-  java_yolks:
-    name: Java Yolks {tag}
-    image: ghcr.io/pterodactyl/yolks:java_{tag}
-    tags: [ 8, 11, 14, 16 ]
 
   # --- Languages (Generic) ---
   python:
@@ -69,12 +58,12 @@ images:
 
   # --- Databases ---
   mongodb_4:
-    - name: MongoDB 4
-      image: quay.io/parkervcp/pterodactyl-images:db_mongo-4
+    name: MongoDB 4
+    image: quay.io/parkervcp/pterodactyl-images:db_mongo-4
   
   mariadb:
-    - name: MariaDB 10.3
-      image: quay.io/parkervcp/pterodactyl-images:db_mariadb
+    name: MariaDB 10.3
+    image: quay.io/parkervcp/pterodactyl-images:db_mariadb
   
   postgres:
     name: Postgres {tag}
@@ -82,80 +71,80 @@ images:
     tags: [ 13, 14, 16 ]
 
   redis_6:
-    - name: Redis 6
-      image: ghcr.io/parkervcp/yolks:redis_6
+    name: Redis 6
+    image: ghcr.io/parkervcp/yolks:redis_6
 
   # --- Game Specific Images ---
   
   # 7 Days to Die
   steamcmd: 
-    - name: SteamCMD (Debian)
-      image: ghcr.io/parkervcp/steamcmd:debian
+    name: SteamCMD (Debian)
+    image: ghcr.io/parkervcp/steamcmd:debian
 
   # Don't Starve Together, Unturned
   debian_source: 
-    - name: Debian Source
-      image: quay.io/parkervcp/pterodactyl-images:debian_source
+    name: Debian Source
+    image: quay.io/parkervcp/pterodactyl-images:debian_source
 
   # ARK: Survival Evolved
   games_source:
-    - name: Games Source
-      image: ghcr.io/parkervcp/games:source
+    name: Games Source
+    image: ghcr.io/parkervcp/games:source
 
   # TF2 Classic
   debian_base:
-    - name: Debian Base
-      image: quay.io/parkervcp/pterodactyl-images:debian_base
+    name: Debian Base
+    image: quay.io/parkervcp/pterodactyl-images:debian_base
 
   # Terraria Vanilla
   base_debian:
-    - name: Base Debian
-      image: quay.io/parkervcp/pterodactyl-images:base_debian
+    name: Base Debian
+    image: quay.io/parkervcp/pterodactyl-images:base_debian
 
   # Nukkit
   nukkit: 
-    - name: Java Glibc (Nukkit)
-      image: quay.io/pterodactyl/core:java-glibc
+    name: Java Glibc (Nukkit)
+    image: quay.io/pterodactyl/core:java-glibc
   
   # Pocketmine и Vanilla Bedrock
   bedrock_yolk:
-    - name: Debian Yolk (Bedrock/PMMP)
-      image: ghcr.io/parkervcp/yolks:debian
+    name: Debian Yolk (Bedrock/PMMP)
+    image: ghcr.io/parkervcp/yolks:debian
 
   # RageMP
   ragemp:
-    - name: Debian Dotnet (RageMP)
-      image: quay.io/parkervcp/pterodactyl-images:debian_dotnet
+    name: Debian Dotnet (RageMP)
+    image: quay.io/parkervcp/pterodactyl-images:debian_dotnet
 
   # Rust (Carbon / AIO)
   rust_game:
-    - name: Rust AIO (Carbon)
-      image: ghcr.io/sturdystubs/aioegg:production
+    name: Rust AIO (Carbon)
+    image: ghcr.io/sturdystubs/aioegg:production
       
   # Rust (Staging, Custom)
   rust_core:
-    - name: Rust Core
-      image: quay.io/pterodactyl/core:rust
+    name: Rust Core
+    image: quay.io/pterodactyl/core:rust
 
   # Subnautica, TShock
   mono_core:
-    - name: Mono Core
-      image: quay.io/pterodactyl/core:mono
+    name: Mono Core
+    image: quay.io/pterodactyl/core:mono
 
   # tModLoader
   mono_debian_5:
-    - name: Debian Mono 5
-      image: quay.io/parkervcp/pterodactyl-images:debian_mono-5
+    name: Debian Mono 5
+    image: quay.io/parkervcp/pterodactyl-images:debian_mono-5
 
   # tModLoader 2
   yolks_dotnet_6:
-    - name: Dotnet 6 (Yolks)
-      image: ghcr.io/parkervcp/yolks:dotnet_6
+    name: Dotnet 6 (Yolks)
+    image: ghcr.io/parkervcp/yolks:dotnet_6
 
   # The Forest
   wine:
-    - name: Wine Latest
-      image: ghcr.io/parkervcp/yolks:wine_latest
+    name: Wine Latest
+    image: ghcr.io/parkervcp/yolks:wine_latest
 
 config:
   minecraft_java:
